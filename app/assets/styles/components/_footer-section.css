@@ -1,0 +1,19 @@
+.footer-section {
+	background: $mainColor;
+	text-align: center;	
+	color: #fff;
+	padding: .5rem 0;
+
+	&__copyright{
+		font-weight: 200;
+		display: block;
+		margin-bottom: 1rem;
+
+		@mixin atMedium {
+			display: inline;
+			margin-right: 1.4rem;
+
+		}
+	}
+	
+}

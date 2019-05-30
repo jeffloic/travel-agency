@@ -482,8 +482,25 @@ a {
 
 .wrapper--no-padding-until-medium {
 			padding-left: 18px;
-			padding-right: 18px
+			padding-right: 18px;
+			padding-bottom: 3rem
 	}
+	}
+
+.wrapper--no-padding-until-large {
+	    padding-left: 0;
+	    padding-right: 0;
+
+  	}
+
+@media (min-width: 1010px) {
+
+.wrapper--no-padding-until-large {
+	      	padding-left: 18px;
+	      	padding-right: 18px;
+	      	padding-bottom: 3rem
+
+  	}
 	}
 
 .wrapper .wrapper {
@@ -503,7 +520,7 @@ a {
 	}
 
 .page-section {
-	padding: 1rem 0;
+	padding: 1.2rem 0;
 
 	
 }
@@ -958,5 +975,27 @@ Instead edit gulp/templates/sprite */
   	height: 42px;
   	background-position: 36.69752421959096% 45.792307692307695%;
   }
+
+.footer-section {
+	background: #2f5572;
+	text-align: center;	
+	color: #fff;
+	padding: .5rem 0;
+	
+}
+
+.footer-section__copyright{
+		font-weight: 200;
+		display: block;
+		margin-bottom: 1rem;
+	}
+
+@media (min-width: 800px) {
+
+.footer-section__copyright{
+			display: inline;
+			margin-right: 1.4rem
+	}
+	}
 
 
