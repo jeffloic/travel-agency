@@ -4,7 +4,7 @@ browserSync = require('browser-sync').create();
 
 
 /*********  WATCHING CHANGE ON TASKS   *********/
-gulp.task('watch', function(done) {
+gulp.task('watch', (done) => {
 	
 	browserSync.init({
 		notify: false,
@@ -18,24 +18,3 @@ gulp.task('watch', function(done) {
 
 	done();
 });
-
-// // Watch Sass & Serve
-// gulp.task('watch', gulp.series('styles',  function(done) {
-
-
-//   browserSync.init({
-// 		notify: false,
-// 		server: "app"
-// 	});
-  	
-//   gulp.watch(['./app/assets/styles/**/*.css'], gulp.series('styles'));
-//   gulp.watch("./app/*.html").on('change', browserSync.reload);
-//   done();
-// }));
-
-// // Default Task
-// gulp.task('default', 'watch');
-
-
-
-
