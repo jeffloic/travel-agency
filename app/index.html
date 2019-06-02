@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
+  <!-- <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'> -->
   <title>Clear View Escapes</title>
   <meta name="keywords" content="Travel planning, travel bundles, travel escapes, affordable travel">
   <meta name="description" content="Your clarity. One trip away. We create soul restoring journeys that inspire you to be you.">
@@ -10,16 +10,30 @@
 </head>
 
 <body>
-  <header>
-    <img src="assets/images/icons/clear-view-escapes.svg">
-    <a href="#" class="btn">Get in Touch</a>
-    <nav>
-      <ul>
-        <li><a href="#our-beginning">Our Beginning </a></li>
-        <li><a href="#features">Features</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-      </ul>
-    </nav>
+  <header class="header-section">
+    <div class="wrapper">
+      <div class="header-section__logo">
+        <div class="header-section__logo__graphic icon icon--clear-view-escapes">
+          Clear View Escapes
+        </div>
+      </div>
+
+      <div class="header-section__menu-icon">
+        <div class="header-section__menu-icon__middle"></div>
+      </div>
+      <div class="header-section__menu-content">
+        <div class="header-section__btn">
+        <a href="#" class="btn">Get in Touch</a>
+        </div>
+        <nav class="primary-nav primary-nav--pull-right">
+          <ul>
+            <li><a href="#our-beginning">Our Beginning </a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
 
   <div class="large-header">
@@ -99,7 +113,7 @@
   </div>
 
   <div id="testimonials" class="page-section page-section--no-b-padding-until-large page-section--testimonials">
-    <div class="wrapper--no-padding-until-large"> 
+    <div class="wrapper wrapper--no-padding-until-large"> 
       <h2 class="section-title section-title--blue"><span class="icon icon--comment section-title__icon"></span> Real <strong>Testimonials</strong></h2>
       <div class="row row--gutters row--gutters-small row--equal-height-large row--t-padding generic-content">
         <div class="row__large-4">
@@ -141,5 +155,8 @@
       <p> <span class="footer-section__copyright">Copyright &copy; 2019 Clear View Escapes. All rights reserved.</span> <a href="#" class="btn btn--orange">Get in Touch</a></p>
     </div>
   </footer>
+
+  <script src="src/scripts/App.js"></script>
+
 </body>
 </html>
