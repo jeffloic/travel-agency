@@ -1025,8 +1025,13 @@ Instead edit gulp/templates/sprite */
 @media (min-width: 800px) {
 
 .header-section {
+	position: fixed;
 	background: rgba(47,85,114, .3)
 }
+
+		.header-section--dark {
+			background: rgba(23, 51, 72, .9);
+		}
 	}
 
 @media (min-width: 800px) {
@@ -1044,6 +1049,9 @@ Instead edit gulp/templates/sprite */
 		        transform: translateX(-50%) scale(.8);
 		-webkit-transform-origin: 50% 0;
 		        transform-origin: 50% 0;
+		transition: -webkit-transform .3s ease-out;
+		transition: transform .3s ease-out;
+		transition: transform .3s ease-out, -webkit-transform .3s ease-out;
 		background: #2f5572;
 		padding: 25px 36px;
 	}
@@ -1055,6 +1063,11 @@ Instead edit gulp/templates/sprite */
 			-webkit-transform: translateX(0);
 			        transform: translateX(0)
 	}
+
+			.header-section--dark .header-section__logo {
+				-webkit-transform: scale(.57);
+				        transform: scale(.57);
+			}
 	}
 
 .header-section__logo__graphic {
