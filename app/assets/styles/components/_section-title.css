@@ -17,6 +17,11 @@
 		color: $mainColor;
 	}
 
+	&--less-margin{
+		margin-top: 0;
+		margin-bottom: 1.3rem;
+	}
+
 	&__icon {
 		display: block;
 		margin-left: auto;
