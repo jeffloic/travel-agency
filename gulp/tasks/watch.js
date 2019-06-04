@@ -15,10 +15,12 @@ gulp.task('watch', (done) => {
 
 	//Watching the change from the css folder
 	gulp.watch('./app/assets/styles/**/*.css', gulp.series('styles', function() {
-		return gulp.src('./app/assets/styles/styles.css').pipe(browserSync.stream());
+		return gulp.src('./app/assets/styles/styles.css')
+			.pipe(browserSync.stream());
 	}));
 	gulp.watch('./app/assets/scripts/**/*.js', gulp.series('scripts', function() {
-		return gulp.src('./app/assets/scripts/App.js').pipe(browserSync.stream());
+		return gulp.src('./app/assets/scripts/App.js')
+			.pipe(browserSync.stream());
 	}));
 
 	done();
