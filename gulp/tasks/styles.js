@@ -5,8 +5,7 @@ autoprefixer = require('autoprefixer'),
 cssvars = require('postcss-simple-vars'),
 nested = require('postcss-nested'),
 cssImport = require('postcss-import'),
-mixins = require('postcss-mixins'),
-browserSync = require('browser-sync').create();
+mixins = require('postcss-mixins');
 
 
 /*********  STYLING TASK   *********/
@@ -15,7 +14,6 @@ gulp.task('styles', (done) => {
 		.src('./app/assets/styles/styles.css')
 		.pipe(postcss([cssImport, mixins, cssvars, nested, hexrgba, autoprefixer]))
 		.pipe(gulp.dest('./app/src/styles'))
-		.pipe(browserSync.stream());
 		done();
 });
 
