@@ -5,7 +5,6 @@
 
 /*********  WATCHING CHANGE ON TASKS   *********/
  gulp.task('watch', (done) => {
-	
  	browserSync.init({
  		notify: false,
  		server: {
@@ -14,21 +13,24 @@
   }
  	});
 
- 	// gulp.watch('./app/*.html').on('change', browserSync.reload);
+ // Watching the change from the index.html
  watch('./app/index.html', function() {
     browserSync.reload();
   });
 
 
- 	//Watching the change from the css folder
- 	watch('./app/assets/styles/**/*.css', gulp.series('styles', function() {
- 		return gulp.src('./app/assets/styles/styles.css')
- 			.pipe(browserSync.stream());
- 	}));
- 	watch('./app/assets/scripts/**/*.js', gulp.series('scripts', function() {
+ //Watching the change from the css folder
+ watch('./app/assets/styles/**/*.css', gulp.series('styles', function() {
+ 	return gulp.src('./app/assets/styles/styles.css')
+ 		.pipe(browserSync.stream());
+ }));
+
+
+ //Watching the change from the css folder
+ watch('./app/assets/scripts/**/*.js', gulp.series('scripts', function() {
  		return gulp.src('./app/assets/scripts/App.js')
  			.pipe(browserSync.stream());
- 	}));
+ }));
 
  	done();
  });
